@@ -1,3 +1,4 @@
+import java.util.*;
 class TripletSum{
   
   public static void main(String argss[]){
@@ -14,7 +15,23 @@ class TripletSum{
                      break;
                  }
              }
-         }
+          }
       }
+
+    // Method 2 - sort the array and observer the pointer sum with while condition
+    // T.C = O(logn)
+    Arrays.sort(arr);
+        for(int i =0;i<arr.length-2;i++){
+          int j = i+1;
+          int k = j+1;
+            while(j<k){
+                int sum = arr[i] + arr[j] + arr[k];
+                if(sum ==0){
+                   System.out.println("Triplet Sum from which we got zero :" + arr[i] + " " + arr[j] + " " + arr[k]);  
+                }
+              j++;
+              k--;
+            }
+         }
     }
 }
