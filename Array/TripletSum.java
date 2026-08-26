@@ -19,7 +19,7 @@ class TripletSum{
       }
 
     // Method 2 - sort the array and observer the pointer sum with while condition
-    // T.C = O(logn)
+    // T.C = O(N^2)
     Arrays.sort(arr);
         for(int i =0;i<arr.length-2;i++){
           int j = i+1;
@@ -32,6 +32,8 @@ class TripletSum{
               j++;
               k--;
             }
+          if(sum < 0)  j++;
+          else k--;
          }
     }
 }
