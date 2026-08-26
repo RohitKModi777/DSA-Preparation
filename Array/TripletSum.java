@@ -31,9 +31,9 @@ class TripletSum{
                 }
               j++;
               k--;
-            }
           if(sum < 0)  j++;
           else k--;
+            }
          }
     }
 }
