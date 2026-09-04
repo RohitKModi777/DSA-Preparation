@@ -19,10 +19,31 @@ class RemoveDigitMaximize{
     }
         return maxStringDigit;
   }
+
+//  By observation checking if we remove the last element of digit present in repeating number we get maximum for example - 7237578
+  /* when we remove last digit 7 of above example it will give me the maximum number*/
+  // T.C =O(N)
+    public String removeDigitM2(String number, char digit) {
+      // we have to compare with the next one that's why we iterate from index one
+       for(int i =1;i<number.length();i++){
+         // when they reach with the digit
+         if(number.charAt(i-1) == digit){
+           // check the next elemnt is greater just remove it by using substring
+            if(number.charAt(i-1)<number.charAt(i))
+            {
+                return number.substring(0,i-1) + number.substring(i);
+            }
+         }
+       }
+      // it helps to get the last occurence of the digit 
+       int lastIndex = number.lastIndexOf(digit);
+       return number.substring(0,lastIndex) + number.substring(lastIndex+1);
+    }
   
   public static void main(String args[]){
     String str ="1231";
     char digit = '1';
     System.out.println(removeGetMaximum(str,digit));
+    System.out.println(removeDigitM2(str,digit));
   }
 }
