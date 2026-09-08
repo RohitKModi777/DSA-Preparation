@@ -11,6 +11,7 @@ class SlidingWindow{
         sum -= arr[i - k + 1];    // Window ka first element hatao
     }
 }
+    // ADD → CONDITION CHECK → SHRINK → ANSWER
     public static int VariableSizeWindow(int arr[]){
       int left = 0;
       int sum = 0;
