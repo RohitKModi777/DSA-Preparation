@@ -1,4 +1,6 @@
 class SlidingWindow{
+
+  // for fixedSizeWindow - ADD → CHECK → REMOVE
   public static void fixedSizeWidow(int arr[]){
     int sum = 0;
     int ans = 0;
