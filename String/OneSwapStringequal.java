@@ -1,3 +1,11 @@
+// Leetcode - 1790
+/* 
+Approach
+- first we check the swapping is not more than 1 times and for determining this we can track the index changing 
+- we take an array of 2 size , with mismatch track variable 
+- if charater not equal there is a chances of swapping occured 
+- atlast we check the index matches by observation 
+*/
 class OneSwap{
   public static boolean OneSwapString(String s1, String s2){
      // given already equal length of the string so will not check that case
