@@ -25,3 +25,4 @@ class ReducedNumber{
   }
 }
     
+// for optimization check singleDigitSum.java file
