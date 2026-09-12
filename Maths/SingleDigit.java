@@ -1,4 +1,8 @@
 class SingleDigit{
+  public static int SingleDigitOptimize(int a){
+     int ans = 1 + (a-1) % 9;   // MathMatical observation
+    return ans;
+  }
   public static void main(String args[]){
     // input = 38 output = 2
     // explaination => 38 -> 3+8 => 11 ->1+1 =2
@@ -14,5 +18,8 @@ class SingleDigit{
      n= sum;
    }
     System.out.println(n);
+
+    int num =14568;
+    System.out.println(SingleDigitOptimize(num));
   }
 }
