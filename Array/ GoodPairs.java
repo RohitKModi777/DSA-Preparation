@@ -11,7 +11,7 @@ Optimal Approach - create a freq array of 101 based on queston array's size give
    -T.C =O(N)
    -S.C =O(1)
 */
-class NP{
+class NGP{
   public static int nicepairs(int[] nums){
      int ans =0;
      int count [] = new int[101];
