@@ -1,4 +1,4 @@
-// Leetcodde - 347 (Top K Frequent Element)
+// Leetcodde - 347 (Top K Frequent Element)  - two solution with Heap and Bucket Sort
 
 
 import java.util.*;
