@@ -1,4 +1,4 @@
-// Leetcode -69   - use long also when you multiply mid to get x because it exceed teh limit of int 
+// Leetcode -69   - use long or do log typecasting  also when you multiply mid to get x because it exceed teh limit of int 
 /*Observation - the sqroot will be less than x only can't be greater then x and sqrt can't be 0 sot it should be start from 1*/
 /* Approach - as we know that the multiple of that number two times will be equal to sqare of the ans */
 
