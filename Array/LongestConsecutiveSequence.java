@@ -29,9 +29,33 @@ class LCS{
      }
     return maxLen;
   }
+
+
+  public static int longestConSOptimize(int nums[]){
+    HashSet<Integer> set = new HashSet<>();  // it automatic handles the duplicated case
+    int maxLen =0;
+    for(int n : nums){
+       set.add(n);
+    }
+    
+    for(int a:set)
+      {
+        if(!set.contains(a-1))   // where to start the sequence is the main motive we know the difference should be one if the elemnet which is not present n-1 we start the sequence from there 
+        {
+           int count =1;
+            while(set.contains(a+count)) //if it is present in the sequence we increase the count
+           {
+                count++;
+            }
+          maxLen = Math.max(maxLen,count);
+         }
+      }
+    return maxLen;
+  }
   
   public static void main(String args[]){
     int arr[] ={100,4,200,1,2,3};
     System.out.println(longestConS(arr));
+    System.out.println(longestConSOptimize(arr));
   }
 }
