@@ -11,10 +11,10 @@ class Solution {
             {
                 hrs += (p+mid-1)/mid;  //ceiling division in java
             }
-            if(hrs<=h){
+            if(hrs<=h){      //valid speed of koko in left side if min speed we get than greater than of it will be valid also
                 right = mid;
             }
-            else {
+            else {            //else in right side
                 left = mid+1;
             }
         }
