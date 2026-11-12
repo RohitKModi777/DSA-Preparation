@@ -1,0 +1,29 @@
+What is AVL Tree ?
+AVL Tree is defined as the Type of tree, which is generally called as Self Balanced Tree.
+Because it is mostly based on the balancing so it will computed based on the hight.
+
+Why Need ?
+In BST for searching , insertion, deletion it's time complexity is T.C O(N).
+But by using AVL Tree we can perform this three operation Insertion Deletion Searching in O(log n) or O(log H).
+because it is doing this operation based on height.
+
+How to perform?
+if tree is unbalanced - it is first making it balanced by doing rotation.
+how it is determining unbalanced tree nodes or subtree- based on balanced factor.
+Balanced factor = Height(left) - Height(right);
+for leaf node it is 0.
+Balanced factor range is [-1,0,1]
+
+each time of deletion , insertion you have to first calculate the balanced factor, if it is not 0, 1 or -1 then you have to do rotation
+
+there is four cases of rotation
+case 1 : LEFT - LEFT => DO RIGHT Rotation
+case 2 : RIGHT - RIGHT => DO LEFT Rotation
+case 3 : LEFT - RIGHT => DO LEFT  + RIGHT Rotation
+case 4 : RIGHT - LEFT => DO RIGHT + LEFT Rotation
+
+Deletion in AVL Tree is same as in BST
+- no child deletion 
+- single child deletion
+- no child deletion
+Note - but after every time of deletion you have to calculate the balance factor if it is unbalance use rotation and again calculate balance factor.
