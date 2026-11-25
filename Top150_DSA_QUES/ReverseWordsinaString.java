@@ -11,8 +11,9 @@ class ReverseWord{
     System.out.println(reverseWord(st));
   }
 
-  public String reverseWord(String str){
-      String word[] = st.split(" +"); // It will help to add as necessary space want to add it will add regex converted into array
+  public static String reverseWord(String str){
+      String word[] = str.split(" +"); 
+      // It will help to add as necessary space want to add it will add regex converted into array
       StringBuilder sb = new StringBuilder();
     // because we want to reverse the array
     for(int i =word.length-1;i>=0;i--){
